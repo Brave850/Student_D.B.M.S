@@ -235,7 +235,7 @@ void menu()
 
     printf("\n\n\n");
     printf("\t\t\t");
-    printf("Do you want to add more? (1/0)");
+    printf("Do you want to add more? (1/0): ");
     int sa;
     cin>>sa;
     
@@ -394,7 +394,7 @@ void del()
 	fclose(ne);
 	remove("data.txt");
 	rename("new.txt","data.txt");
- 	cout<<"Do you want to continue (1/0):/t";
+ 	cout<<"Do you want to continue (1/0):\t";
  	cout<<endl;
     int sa;
     cin>>sa;
@@ -409,7 +409,7 @@ void del()
 	{
 		printf("\n!!!Sorry Record is not found!!!");
 		invalid_choice:
-			printf("\nEnter 1 to Retry\n 2 to main menu()\n 0 for Exit");
+			printf("\nEnter 1 to Retry\n 2 to main menu()\n 0 for Exit \n Enter Your Choice: ");
 			scanf("%d",&mean);
 			if(mean==1)
 			{
